@@ -1,0 +1,15 @@
+.details {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.product {
+  max-width: 100%;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .details {
+    grid-template-columns: auto;
+  }
+}
