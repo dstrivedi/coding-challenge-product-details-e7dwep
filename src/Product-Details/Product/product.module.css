@@ -3,10 +3,23 @@
   grid-template-columns: auto auto auto;
 }
 
+.link {
+  z-index: 100;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  font-weight: bold;
+  max-width: 100%;
+  width: 25em;
+  background-color: black;
+  opacity: 0.5;
+}
+
 .product {
   max-width: 100%;
   align-items: center;
   margin: 20px;
+  width: 90%;
 }
 
 @media (max-width: 500px) {

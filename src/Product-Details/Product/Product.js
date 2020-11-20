@@ -10,17 +10,7 @@ const Product = props => {
         return (
           <div className={productStyles.product}>
             <a
-              style={{
-                zIndex: "100",
-                color: "white",
-                textDecoration: "none",
-                position: "absolute",
-                fontWeight: "bold",
-                maxWidth: "100%",
-                width: "119vh",
-                backgroundColor: "black",
-                opacity: "0.5"
-              }}
+              className={productStyles.link}
               href={p.links.www}
               target="_blank"
             >
