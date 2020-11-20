@@ -9,8 +9,7 @@
   text-decoration: none;
   position: absolute;
   font-weight: bold;
-  max-width: 100%;
-  width: 25em;
+  min-width: 29%;
   background-color: black;
   opacity: 0.5;
 }
@@ -25,5 +24,9 @@
 @media (max-width: 500px) {
   .details {
     grid-template-columns: auto;
+  }
+
+  .link {
+    min-width: 86%;
   }
 }
