@@ -1,6 +1,7 @@
 import React from "react";
 import productStyles from "./product.module.css";
 import ImageCarousel from "./../../Carousel/ImageCarousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Product = props => {
   return (
@@ -24,13 +25,9 @@ const Product = props => {
             >
               <p>{p.name}</p>
             </a>
-            <ImageCarousel
-              url={p.images.map(img => {
-                return img.href;
-              })}
-              style={{ height: "100%", width: "100%" }}
-            />
-            ;
+
+            <ImageCarousel imageUrl={p.images} />
+
             <p
               style={{
                 position: "absolute",
