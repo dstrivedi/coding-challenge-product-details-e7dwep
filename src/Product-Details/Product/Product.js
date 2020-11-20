@@ -25,9 +25,12 @@ const Product = props => {
               <p>{p.name}</p>
             </a>
             <ImageCarousel
-              style={{ width: "100%", height: "100%" }}
-              image={p.hero.href}
+              url={p.images.map(img => {
+                return img.href;
+              })}
+              style={{ height: "100%", width: "100%" }}
             />
+            ;
             <p
               style={{
                 position: "absolute",

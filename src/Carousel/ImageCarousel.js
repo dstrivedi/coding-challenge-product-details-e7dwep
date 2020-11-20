@@ -1,11 +1,12 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 
-const ImageCarousel = () => {
+const ImageCarousel = props => {
+  console.log(props.url);
   return (
     <Carousel showArrows={true}>
       <div>
-        <img alt="" src={this.props.image} />
+        <img alt="" src={props.url} />
       </div>
     </Carousel>
   );
