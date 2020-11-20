@@ -11,23 +11,22 @@ const Product = props => {
           <div className={productStyles.product}>
             <a
               style={{
-                color: "black",
+                zIndex: "100",
+                color: "white",
                 textDecoration: "none",
                 position: "absolute",
                 fontWeight: "bold",
                 maxWidth: "100%",
-                width: "130vh",
-                backgroundColor: "white",
+                width: "119vh",
+                backgroundColor: "black",
                 opacity: "0.5"
               }}
               href={p.links.www}
               target="_blank"
             >
-              <p>{p.name}</p>
+              <p style={{ padding: "2px" }}>{p.name}</p>
             </a>
-
             <ImageCarousel imageUrl={p.images} />
-
             <p
               style={{
                 position: "absolute",
