@@ -1,5 +1,6 @@
 import React from "react";
 import productStyles from "./product.module.css";
+import Carousel from "./../../Carousel/Carousel";
 
 const Product = props => {
   return (
@@ -23,7 +24,10 @@ const Product = props => {
             >
               <p>{p.name}</p>
             </a>
-            <img style={{ width: "100%", height: "100%" }} src={p.hero.href} />
+            <Carousel
+              style={{ width: "100%", height: "100%" }}
+              src={p.hero.href}
+            />
             <p
               style={{
                 position: "absolute",
